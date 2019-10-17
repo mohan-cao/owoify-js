@@ -1,15 +1,23 @@
 {
   "name": "owoify-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "owoifier: JS Boogaloo Edition",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": "git@github.com:mohan-cao/owoify-js.git",
-  "keywords": [],
+  "keywords": [
+    "owo",
+    "owoifier",
+    "hell"
+  ],
   "author": "mohan-cao <mohancao@yahoo.com.au>",
   "license": "MIT",
   "bugs": {
