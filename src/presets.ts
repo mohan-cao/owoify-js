@@ -1,4 +1,3 @@
-
 import * as f from './wordMappingFunctions';
 import Word from './Word';
 

@@ -1,39 +1,54 @@
 {
   "name": "owoify-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "owoifier: JS Boogaloo Edition",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "test": "jest",
-    "build": "tsc",
-    "prepare": "yarn build",
-    "prepublishOnly": "yarn test",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags"
-  },
-  "repository": "git@github.com:mohan-cao/owoify-js.git",
   "keywords": [
     "owo",
     "owoifier",
     "hell"
   ],
-  "author": "mohan-cao <mohancao@yahoo.com.au>",
-  "license": "MIT",
+  "repository": "git@github.com:mohan-cao/owoify-js.git",
   "bugs": {
     "url": "https://github.com/mohan-cao/owoify-js/issues"
   },
   "homepage": "https://github.com/mohan-cao/owoify-js/",
   "private": false,
-  "devDependencies": {
-    "@types/diff": "^4.0.2",
-    "@types/jest": "^24.0.19",
-    "@types/node": "^12.11.1",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.4"
+  "license": "MIT",
+  "author": "mohan-cao <mohancao@yahoo.com.au>",
+  "main": "dist/index.js",
+  "module": "dist/owoify-js.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
-  "dependencies": {
-    "diff": "^4.0.1"
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "husky": "^3.0.9",
+    "tsdx": "^0.10.5",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.4"
   }
 }
