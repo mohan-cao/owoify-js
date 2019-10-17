@@ -1,6 +1,6 @@
 {
   "name": "owoify-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "owoifier: JS Boogaloo Edition",
   "keywords": [
     "owo",
@@ -23,7 +23,7 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build --format cjs,esm,umd",
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "yarn build",
