@@ -3,6 +3,9 @@ Turning my worst nightmare into a NPM package
 
 [![Build Status](https://travis-ci.org/mohan-cao/owoify-js.svg?branch=master)](https://travis-ci.org/mohan-cao/owoify-js)
 
+## Demo
+[CodePen.io](https://codepen.io/newbeetf2/pen/yLLaNPZ)
+
 ## Installation instructions
 `npm install --save owoify-js`
 
