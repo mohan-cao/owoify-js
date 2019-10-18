@@ -1,5 +1,8 @@
 # owoify-js
-Turning my worst nightmare into a NPM package
+Turning my worst nightmare into a NPM package. This nifty little library helps you turn any string into nonsensical babyspeak similar to the infamous Chrome extension by LeafySweets (which has been deleted unfortunately). Three levels are available:
+- owo (default): pretty vanilla. Not much else to say about it.
+- uwu: moderately infuses the text but it gets wose and wose
+- uvu: litewawwy unweadabwal
 
 [![Build Status](https://travis-ci.org/mohan-cao/owoify-js.svg?branch=master)](https://travis-ci.org/mohan-cao/owoify-js)
 
