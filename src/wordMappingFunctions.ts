@@ -24,6 +24,8 @@ export const Map_Dead_To_Ded = (input: Word): Word =>
   input.replace(/Dead/g, 'Ded').replace(/dead/g, 'ded');
 export const Map_N_Vowel_T_To_Nd = (input: Word): Word =>
   input.replace(/n[aeiou]*t/g, 'nd');
+export const Map_Read_To_Wead = (input: Word): Word =>
+  input.replace(/Read/g, 'Wead').replace(/read/g, 'wead');
 
 export const Map_Brackets_To_StarTrails = (input: Word): Word =>
   input
@@ -80,7 +82,15 @@ export const Map_Poi_To_Pwoi = (input: Word): Word =>
   input.replace(/([Pp])oi/g, '$1woi');
 export const Map_SpecificConsonants_Le_To_Letter_And_Wal = (
   input: Word
-): Word => input.replace(/([DdFfGgHhJjPpQqRrSsTtXxYyZz])le/g, '$1wal');
+): Word => input.replace(/([DdFfGgHhJjPpQqRrSsTtXxYyZz])le$/g, '$1wal');
+export const Map_Consonant_R_To_Consonant_W = (input: Word): Word =>
+  input.replace(/([BbCcDdFfGgKkPpQqSsTtWwXxZz])r/g, '$1w');
+export const Map_Ly_To_Wy = (input: Word): Word =>
+  input.replace(/ly/g, 'wy').replace(/Ly/g, 'Wy');
+export const Map_Ple_To_Pwe = (input: Word): Word =>
+  input.replace(/([Pp])le/g, '$1we');
+export const Map_Nr_To_Nw = (input: Word): Word =>
+  input.replace(/nr/g, 'nw').replace(/NR/g, 'NW');
 
 export const Map_Fuc_To_Fwuc = (input: Word): Word =>
   input.replace(/([Ff])uc/g, '$1wuc');
@@ -99,3 +109,11 @@ export const Map_Haha_To_HehexD = (input: Word): Word =>
   input.replace(/\b(ha|hah|heh|hehe)+\b/g, 'hehe xD');
 export const Map_The_To_Teh = (input: Word): Word =>
   input.replace(/\b([Tt])he\b/g, '$1eh');
+export const Map_You_To_U = (input: Word): Word =>
+  input.replace(/\bYou\b/g, 'U').replace(/\byou\b/g, 'u');
+export const Map_Time_To_Tim = (input: Word): Word =>
+  input.replace(/\b([Tt])ime\b/g, '$1im');
+export const Map_Over_To_Owor = (input: Word): Word =>
+  input.replace(/([Oo])ver/g, '$1wor');
+export const Map_Worse_To_Wose = (input: Word): Word =>
+  input.replace(/([Ww])orse/g, '$1ose');

@@ -4,11 +4,16 @@ import Word from './Word';
 export const specificWordMappingArray: Array<(str: Word) => Word> = [
   f.Map_Fuc_To_Fwuc,
   f.Map_Mom_To_Mwom,
+  f.Map_Time_To_Tim,
   f.Map_Me_To_Mwe,
   f.Map_NVowel_To_Ny,
+  f.Map_Over_To_Owor,
   f.Map_Ove_To_Uv,
   f.Map_Haha_To_HehexD,
   f.Map_The_To_Teh,
+  f.Map_You_To_U,
+  f.Map_Read_To_Wead,
+  f.Map_Worse_To_Wose,
 ];
 export const uvuMappingArray: Array<(str: Word) => Word> = [
   f.Map_O_To_OwO,
@@ -39,4 +44,8 @@ export const owoMappingArray: Array<(str: Word) => Word> = [
   f.Map_Ver_To_Wer,
   f.Map_Poi_To_Pwoi,
   f.Map_SpecificConsonants_Le_To_Letter_And_Wal,
+  f.Map_Consonant_R_To_Consonant_W,
+  f.Map_Ly_To_Wy,
+  f.Map_Ple_To_Pwe,
+  f.Map_Nr_To_Nw,
 ];
