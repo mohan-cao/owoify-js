@@ -43,14 +43,6 @@ export default class Word {
       for (const word of replacedWords) {
         this.replacedWords.add(word);
       }
-      console.debug(
-        'Replaced ',
-        this.word,
-        ' with ',
-        replacingWord,
-        ' and replaced subset ',
-        this.replacedWords
-      );
       this.word = replacingWord;
     }
     return this;
