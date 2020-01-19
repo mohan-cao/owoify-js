@@ -17,11 +17,12 @@ Turning my worst nightmare into a NPM package. This nifty little library helps y
 const owoify = require('owoify-js').default
 
 owoify('oh dear god please help me, save me from this hell that is owo');
-// oh dear gwod pwalase help mwe, save mwe fwom this heww that is owo
+// oh dear gwod pwease help mwe, save mwe fwom this heww that is owo
 
 owoify('oh dear god please help me, save me from this hell that is uwu', 'uwu');
 // oh deaw gwod pwease hewp mwe (・`ω´・) sawe mwe fwom fwis heww dat is uwu
 
-owoify('oh dear god please help me, save me from this hell that is uvu', 'uvu');
-// owoh deaw gwod pwease hewp mwe ＼(＾▽＾)／ sawe mwe fwowom fwis heww dat is uvu
+owoify('oh dear god please help me, save me from this hell that is uvu', 'uvu'); // randomly permutes number of o -> owo in text
+// owoh deaw gwod pweease hewp mw ＼(＾▽＾)／ sawe mwe fwowom fwis heww dat is uvu
+// oh deaw gwowod pwease hewp mwe ^w^ sawe mwe fwowom fwis heww dat is uvu
 ```
