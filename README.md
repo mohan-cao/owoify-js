@@ -4,7 +4,7 @@ Turning my worst nightmare into a NPM package. This nifty little library helps y
 - uwu: moderately infuses the text but it gets wose and wose
 - uvu: litewawwy unweadabwal
 
-[![Build Status](https://travis-ci.org/mohan-cao/owoify-js.svg?branch=master)](https://travis-ci.org/mohan-cao/owoify-js)
+[![Node.js Package](https://github.com/mohan-cao/owoify-js/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/mohan-cao/owoify-js/actions/workflows/npm-publish.yml)
 
 ## Demo
 [CodePen.io](https://codepen.io/newbeetf2/pen/yLLaNPZ)
