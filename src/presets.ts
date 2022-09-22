@@ -1,4 +1,4 @@
-import * as f from './wordMappingFunctions';
+import * as f from './map_functions';
 import Word from './Word';
 
 export const specificWordMappingArray: Array<(str: Word) => Word> = [
@@ -6,7 +6,6 @@ export const specificWordMappingArray: Array<(str: Word) => Word> = [
   f.Map_Mom_To_Mwom,
   f.Map_Time_To_Tim,
   f.Map_Me_To_Mwe,
-  f.Map_NVowel_To_Ny,
   f.Map_Over_To_Owor,
   f.Map_Ove_To_Uv,
   f.Map_Haha_To_HehexD,
@@ -14,6 +13,14 @@ export const specificWordMappingArray: Array<(str: Word) => Word> = [
   f.Map_You_To_U,
   f.Map_Read_To_Wead,
   f.Map_Worse_To_Wose,
+  f.Map_Great_To_Gwate,
+  f.Map_Aviat_To_Awiat,
+  f.Map_Dedicat_To_Deditat,
+  f.Map_Remember_To_Rember,
+  f.Map_When_To_Wen,
+  f.Map_Frightened_To_Frigten,
+  f.Map_Meme_To_Mem,
+  f.Map_Feel_To_Fell,
 ];
 export const uvuMappingArray: Array<(str: Word) => Word> = [
   f.Map_O_To_OwO,
@@ -33,6 +40,7 @@ export const uwuMappingArray: Array<(str: Word) => Word> = [
   f.Map_ROrL_To_W,
 ];
 export const owoMappingArray: Array<(str: Word) => Word> = [
+  f.Map_NVowel_To_Ny,
   f.Map_Ll_To_Ww,
   f.Map_VowelOrRExceptO_L_To_Wl,
   f.Map_Old_To_Owld,
@@ -48,4 +56,6 @@ export const owoMappingArray: Array<(str: Word) => Word> = [
   f.Map_Ly_To_Wy,
   f.Map_Ple_To_Pwe,
   f.Map_Nr_To_Nw,
+  f.Map_Mem_To_Mwem,
+  f.Unmap_Nywo_To_Nyo,
 ];

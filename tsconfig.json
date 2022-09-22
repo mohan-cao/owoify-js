@@ -7,7 +7,7 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./",
+    "rootDir": "./src",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -20,6 +20,7 @@
     "noImplicitReturns": true,
     //"noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
+    "stripInternal": true,
     "baseUrl": "./",
     "paths": {
       "*": ["src/*", "node_modules/*"]

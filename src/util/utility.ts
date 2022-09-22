@@ -1,4 +1,11 @@
-export default function interleaveArrays(a: any[], b: any[]): any[] {
+/**
+ * Interleaves 2 arrays
+ * @internal
+ * @param a first array
+ * @param b second arry
+ * @returns array with interleaved elements
+ */
+export function interleaveArrays(a: any[], b: any[]): any[] {
   let arr: any[] = [];
   let observed = a;
   let other = b;

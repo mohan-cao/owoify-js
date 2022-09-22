@@ -90,14 +90,18 @@ export const Map_Ly_To_Wy = (input: Word): Word =>
 export const Map_Ple_To_Pwe = (input: Word): Word =>
   input.replace(/([Pp])le/g, '$1we');
 export const Map_Nr_To_Nw = (input: Word): Word =>
-  input.replace(/nr/g, 'nw').replace(/NR/g, 'NW');
+  input.replace(/([Nn])r/g, '$1w').replace(/NR/g, 'NW');
+export const Map_Mem_To_Mwem = (input: Word): Word =>
+  input.replace(/Mem/g, 'mwem').replace(/mem/g, 'Mwem');
+export const Unmap_Nywo_To_Nyo = (input: Word): Word =>
+  input.replace(/([Nn])ywo/g, '$1yo', true);
 
 export const Map_Fuc_To_Fwuc = (input: Word): Word =>
   input.replace(/([Ff])uc/g, '$1wuc');
 export const Map_Mom_To_Mwom = (input: Word): Word =>
   input.replace(/([Mm])om/g, '$1wom');
 export const Map_Me_To_Mwe = (input: Word): Word =>
-  input.replace(/([Mm])e/g, '$1we');
+  input.replace(/^Me$/g, 'Mwe').replace(/^me$/g, 'mwe');
 export const Map_NVowel_To_Ny = (input: Word): Word =>
   input
     .replace(/n([aeiou])/g, 'ny$1')
@@ -117,3 +121,19 @@ export const Map_Over_To_Owor = (input: Word): Word =>
   input.replace(/([Oo])ver/g, '$1wor');
 export const Map_Worse_To_Wose = (input: Word): Word =>
   input.replace(/([Ww])orse/g, '$1ose');
+export const Map_Great_To_Gwate = (input: Word): Word =>
+  input.replace(/([Gg])reat/g, '$1wate');
+export const Map_Aviat_To_Awiat = (input: Word): Word =>
+  input.replace(/([Aa])viat/g, '$1wiat');
+export const Map_Dedicat_To_Deditat = (input: Word): Word =>
+  input.replace(/([Dd])edicat/g, '$1editat');
+export const Map_Remember_To_Rember = (input: Word): Word =>
+  input.replace(/([Rr])emember/g, '$1ember');
+export const Map_When_To_Wen = (input: Word): Word =>
+  input.replace(/([Ww])hen/g, '$1en');
+export const Map_Frightened_To_Frigten = (input: Word): Word =>
+  input.replace(/([Ff])righten(ed)*/g, '$1rigten');
+export const Map_Meme_To_Mem = (input: Word): Word =>
+  input.replace(/Meme/g, 'mem').replace(/Mem/g, 'Mem');
+export const Map_Feel_To_Fell = (input: Word): Word =>
+  input.replace(/^([Ff])eel$/g, '$1ell');

@@ -1,3 +1,5 @@
+import { debug } from './util/logger';
+
 function searchValueContainsReplacedWords(
   searchValue: string,
   replaceValue: string,
@@ -9,8 +11,8 @@ function searchValueContainsReplacedWords(
 }
 
 export default class Word {
-  word: string;
-  replacedWords: Set<string>;
+  private word: string;
+  private replacedWords: Set<string>;
 
   constructor(word: string) {
     this.word = word.trim();
@@ -43,6 +45,18 @@ export default class Word {
       for (const word of replacedWords) {
         this.replacedWords.add(word);
       }
+
+      debug(
+        'Replaced "',
+        this.word,
+        '" with "',
+        replacingWord,
+        '" and replaced subset',
+        this.replacedWords,
+        'with search string:',
+        searchValue
+      );
+
       this.word = replacingWord;
     }
     return this;

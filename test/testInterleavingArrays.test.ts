@@ -1,4 +1,4 @@
-import interleaveArrays from '../src/interleaveArrays';
+import { interleaveArrays } from '../src/util/utility';
 
 test('interleave a split string into a whitespace array', () => {
   let whitespace = 'does owo actually work?'.split(/[^\s]+/g);

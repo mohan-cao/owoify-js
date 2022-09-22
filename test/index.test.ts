@@ -19,7 +19,7 @@ test('not a meme', () => {
       'uwu'
     ).toString()
   ).toBe(
-    `｡･:*:･ﾟ★,｡･:*:･ﾟ☆Bwack scween wif text Teh swound of buzzing bees can be heawd☆ﾟ･:*:･｡,★ﾟ･:*:･｡ Accwowding two aww knywown waws of aviation thewe is nywo way a bee shwouwd be abwal two fwy Its wings awe twoo smaww two get its fat littwal bwody off teh gwound Teh bee of cwouwse fwies anyway because bees dwon't cawe what humans fwink is impwossibwal BAWWY BENSWON: ｡･:*:･ﾟ★,｡･:*:･ﾟ☆Bawwwy is picking out a shiwt☆ﾟ･:*:･｡,★ﾟ･:*:･｡ Yewwow bwack Yewwow bwack Yewwow bwack Yewwow bwack Ooh bwack and yewwow Wet's shake it up a littwal`
+    `｡･:*:･ﾟ★,｡･:*:･ﾟ☆Bwack scween wif text Teh swound of buzzing bees can be heawd☆ﾟ･:*:･｡,★ﾟ･:*:･｡ Accwowding two aww knyown waws of awiation thewe is nyo way a bee shwouwd be abwal two fwy Its wings awe twoo smaww two get its fat littwal bwody off teh gwound Teh bee of cwouwse fwies anyway because bees dwon't cawe what humans fwink is impwossibwal BAWWY BENSWON: ｡･:*:･ﾟ★,｡･:*:･ﾟ☆Bawwwy is picking out a shiwt☆ﾟ･:*:･｡,★ﾟ･:*:･｡ Yewwow bwack Yewwow bwack Yewwow bwack Yewwow bwack Ooh bwack and yewwow Wet's shake it up a littwal`
   );
 });
 
