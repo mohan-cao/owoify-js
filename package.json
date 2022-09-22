@@ -1,6 +1,6 @@
 {
   "name": "owoify-js",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "owoifier: JS Boogaloo Edition",
   "keywords": [
     "owo",
@@ -27,10 +27,7 @@
     "test": "tsdx test",
     "lint": "tsdx lint",
     "prepare": "husky install && npm run build",
-    "prepublishOnly": "npm run test && npm run lint",
-    "preversion": "npm run lint",
-    "version": "git add -A src",
-    "postversion": "git push && git push --tags"
+    "prepublishOnly": "npm run test && npm run lint"
   },
   "jest": {
     "setupFiles": [
